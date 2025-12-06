@@ -1,35 +1,29 @@
 # Requisitos principales para el proyecto de lector de libros con cámara
 # ----------------------------------------------------------------------
 # Antes de instalar, revisa qué versión de CUDA soporta tu tarjeta gráfica:
-#   https://pytorch.org/get-started/previous-versions/
+#   🔗 https://pytorch.org/get-started/previous-versions/
 # En tu máquina puedes verificarlo con:
-#   nvidia-smi   (muestra la versión de driver y CUDA soportada)
+#   nvidia-smi             (muestra la versión de driver y CUDA soportada)
 
 torch==2.8.0+cu128
 torchvision==0.23.0+cu128
 ultralytics==8.3.198
-
 opencv-python==4.12.0.88
-
-easyocr==1.7.1
+pytesseract==0.3.13
 pyttsx3==2.99
 numpy==2.0.2
 pillow==11.3.0
-SpeechRecognition==3.14.3
-pyaudio==0.2.14
-reportlab==4.2.2
+tensorflow== 2.20.0
+SpeechRecognition == 3.14.3
+pyaudio == 0.2.14
+kivy == 2.3.1
+buildozer ==1.5.0
+plyer == 2.1.
 
-kivy==2.3.1
-buildozer==1.5.0
-plyer==2.1.0
-
-# Solo incluye TensorFlow si realmente lo necesitas (NO se usa en tu script actual):
-# tensorflow==2.20.0
-
-# Para verificar instalación correcta:
+# Para verificar instalación correcta, prueba en Python:
 # import torch
 # import ultralytics
 # import cv2
-# import easyocr
+# import pytesseract
 # import pyttsx3
 # print(torch.__version__, ultralytics.__version__, cv2.__version__)
